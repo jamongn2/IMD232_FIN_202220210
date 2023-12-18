@@ -25,7 +25,7 @@ function draw() {
       let index = (y * video.width + x) * 4;
       let r = video.pixels[index];
 
-      let size2 = map(r, 0, 255, gridSize, 2);
+      let size = map(r, 0, 255, gridSize, 2);
 
       stroke(255, 0, 0);
       strokeWeight(2);
@@ -35,7 +35,7 @@ function draw() {
       redColor.setAlpha(map(r, 0, 255, 0, 255));
       fill(redColor);
       noStroke();
-      ellipse(x + size2, y, size2, size2);
+      ellipse(x + size, y, size, size);
     }
   }
 
