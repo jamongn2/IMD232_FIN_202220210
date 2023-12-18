@@ -2,7 +2,7 @@ const ParticleSize = 12;
 const MaxForce = 10;
 const MinForce = 0;
 
-let imgUrl = 'img/face22.jpg';
+let imgUrl = 'src/w13/img/face22.jpg';
 let img;
 let particles = [];
 let particleRadius;
