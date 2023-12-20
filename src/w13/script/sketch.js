@@ -83,3 +83,64 @@ function disParticles() {
     }
   }
 }
+
+//코드참고
+// 유투브 채널 Web Bae의
+// Picture to Interactive Particle System with p5.js,
+// Processing Tutorial - Programming Posters (Creative Coding in the realms of Graphic Design)
+// 영상을 참고한 코드입니다.
+// https://www.youtube.com/watch?v=_gz8FMduwRc
+// https://www.youtube.com/watch?v=HkQdaVCQ2DA&t=2006s
+
+// const PARTICLE_SIZE = 10;
+// const RESOLUTION = 10;
+
+// let imgUrl;
+// let img;
+// let particles = [];
+
+// function preload() {
+//   img = loadImage(imgUrl);
+// }
+
+// function setup() {
+//   createCanvas(windowWidth, windowHeight);
+
+//   spawnParticles();
+// }
+
+// function draw() {
+//   background(40);
+//   // image(img, 0, 0,width,height);
+//   particles.forEach((particle) => {
+//     particle.draw();
+//   });
+//   p.draw();
+// }
+
+// function spawnParticles() {
+//   for (i = 0; i < width; i += RESOLUTION) {
+//     for (let j = 0; j < height; j += RESOLUTION) {
+//       let x = i / width *img.width
+//       let y = j/ height *img.height
+//       const color = img.get(i,j);
+//       particles.push(new Particle(i, j, 0));
+//     }
+//   }
+// }
+
+// class Particle {
+//   constructor(x, y, color) {
+//     this.x = x;
+//     this.y = y;
+//     this.color = color;
+//   }
+
+//   update() {}
+
+//   draw() {
+//     fill(this.color);
+//     // noStroke();
+//     ellipse(this.x, this.y, PARTICLE_SIZE);
+//   }
+// }
